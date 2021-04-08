@@ -26,18 +26,18 @@ public class SystemFunction extends AbstractFunction {
     @Override
     protected double getFunctionValue(double x) {
         if (x <= 0){
-            return logFn.calculate(x);
+            return trigFn.calculate(x);
         }
         else
-            return trigFn.calculate(x);
+            return logFn.calculate(x);
     }
 
     @Override
     protected double getStubValue(double x) {
         if (x <= 0){
-            return logFn.getStubValue(x);
+            return trigFn.getStubValue(x);
         }
         else
-            return trigFn.getStubValue(x);
+            return logFn.getStubValue(x);
     }
 }

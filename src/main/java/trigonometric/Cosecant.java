@@ -20,6 +20,7 @@ public class Cosecant extends AbstractFunction {
 
     @Override
     protected double getFunctionValue(double x) {
+        x = x % Math.PI;
         double sinValue = sin.calculate(x);
         if (isNaN(x) || isInfinite(x)) {
             return NaN;
@@ -35,7 +36,7 @@ public class Cosecant extends AbstractFunction {
     }
 
     @Override
-    protected double getStubValue(double x) {
+    public double getStubValue(double x) {
         if (Math.abs(x % Math.PI) == Math.PI) {
             return Double.NEGATIVE_INFINITY;
         }
