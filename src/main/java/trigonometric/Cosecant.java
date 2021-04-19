@@ -31,7 +31,6 @@ public class Cosecant extends AbstractFunction {
         if (x == 0.0) {
             return Double.POSITIVE_INFINITY;
         }
-        System.out.println("not stub csc" + x + " " + 1 / sinValue);
         return 1 / sinValue;
     }
 
@@ -43,7 +42,6 @@ public class Cosecant extends AbstractFunction {
         if (Math.abs(x % Math.PI) == 0.0) {
             return Double.POSITIVE_INFINITY;
         } else {
-            System.out.println("not stub csc" + x + " " + 1 / Math.sin(x));
             return 1 / Math.sin(x);
         }
     }

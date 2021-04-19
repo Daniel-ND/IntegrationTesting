@@ -21,13 +21,11 @@ public class Sine extends AbstractFunction {
             a *= (-1) * x * x / (n - 1) / n;
             n += 2;
         }
-        System.out.println("not stub sin" + x + " " + res);
         return res;
     }
 
     @Override
     public double getStubValue(double x) {
-        System.out.println("stub sin" + x + " " + Math.sin(x));
         return Math.sin(x);
     }
 }
